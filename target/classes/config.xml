@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/conext"
+     xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--This is our bean class -->
+<!-- Here we have set the value a s a element -->
+ <bean class="com.spring.test.StudentBean" name="student1">     <!-- Here we will add fully qualified name(package name) -->
+ <property name="studentId">
+ <value>123</value>
+ </property>
+ 
+ 
+ <property name="studentName">
+ <value> Atul gupta </value>
+ </property>
+ 
+ 
+ 
+ <property name="studentAddress">
+ <value>Jaunpur</value>
+ </property>
+  </bean>
+  
+  <bean class="com.spring.test.StudentBean" name="student2" p:studentId="119" p:studentName="Amit singh" p:studentAddress="Gova"/>
+  
+  </beans>
